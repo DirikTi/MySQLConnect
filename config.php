@@ -44,7 +44,10 @@ class Configuration
 		{
             //$row equal please;
             
-            $results = ['num_rows' => $number, 'row'=>$result->fetch_assoc()];
+            $results = [
+		    'num_rows' => $number,
+		    'row'=>$result->fetch_assoc()
+	    ];
 			return  $results;
 		}
 		else
